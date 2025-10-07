@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Weather</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .weather-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      color: black;
+    }
+
+    .search {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .search input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 10px 0 0 10px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search button {
+      padding: 10px;
+      border: none;
+      background: #d5c8d4;
+      color: black;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+    }
+
+    .temp {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .location {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      text-transform: capitalize;
+      font-size: 18px;
+      color: black;
+    }
+
+    .extra {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 14px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="weather-card">
+    <div class="search">
+      <input type="text" placeholder="Enter city">
+      <button>🔍</button>
+    </div>
+    <div class="location">New York</div>
+    <div class="temp">22°C</div>
+    <div class="desc">Sunny</div>
+    <div class="extra">
+      <div>💧 Humidity: 45%</div>
+      <div>💨 Wind: 10 km/h</div>
+    </div>
+  </div>
+
+</body>
+</html>
