@@ -14,6 +14,7 @@
       input,
       button {
         padding: 5px;
+        border-radius: 5px;
       }
       .card {
         background: #333;
@@ -29,16 +30,17 @@
     <div class="card">
       <h1>Simple Weather</h1>
       <div>
-        <input type="text" placeholder="Enter city" />
-        <button>Search</button>
+        <input id="city-input" type="text" placeholder="Enter city" />
+        <button id="search-button">Search</button>
       </div>
-      <p>Location: New York</p>
-      <p>Temperature: 22°C</p>
-      <p>Description: Sunny</p>
+      <p id="location">Location: —</p>
+      <p id="temperature">Temperature: —</p>
+      <p id="description">Description: —</p>
       <ul>
-        <li>Humidity: 45%</li>
-        <li>Wind: 10 km/h</li>
+        <li id="humidity">Humidity: —</li>
+        <li id="wind">Wind: —</li>
       </ul>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
